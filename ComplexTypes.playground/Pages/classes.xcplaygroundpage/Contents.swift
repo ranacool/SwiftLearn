@@ -1,7 +1,7 @@
 //: [Previous](@previous)
 
 import Foundation
-
+//diffenreces between structs and classes
 //1. need self initialiaztion for classes
 class Dog {
     var name : String
@@ -66,4 +66,38 @@ var singerCopy = singer
 singerCopy.name = "Justin"
 
 print(singer.name)
+
+//deinitializers
+class Person {
+    var name = "John Doe"
+    
+    init() {
+        print("\(name) is alive")
+    }
+    
+    func printGreetings() {
+        print("Hello, I'm \(name)")
+    }
+    
+    //deinitlizer
+    deinit {
+        print("\(name) is no more")
+}
+}
+
+for _ in 1...3 {
+    let person = Person()
+    person.printGreetings()
+
+    }
+//mutating property
+
+class nSinger {
+    var name = "Taylor Swift"
+}
+
+let taylor = nSinger()
+taylor.name = "Ed Sheeran"
+
 //: [Next](@next)
+
