@@ -5,5 +5,9 @@
         <page name='ComplexTypes'/>
         <page name='Functions'/>
         <page name='closures'/>
+        <page name='classes'/>
+        <page name='structure'/>
+        <page name='P&amp;E'/>
+        <page name='OUT'/>
     </pages>
 </playground>
